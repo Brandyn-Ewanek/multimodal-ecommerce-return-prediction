@@ -1,0 +1,5 @@
+Phase 2A (Gated Fusion) Results:
+----------------------------------
+R2 Score (Train): 0.1239
+R2 Score (Test):  0.0357
+MAE (Test):       0.3702

@@ -1,0 +1,5 @@
+Phase 2C (Vector Rejection) Results:
+------------------------------------
+R2 Score (Train): 0.1008
+R2 Score (Test):  0.0288
+MAE (Test):       0.3691

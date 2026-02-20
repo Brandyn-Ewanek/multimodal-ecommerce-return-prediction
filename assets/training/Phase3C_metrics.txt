@@ -1,0 +1,5 @@
+Phase 3C (Forensic CLIP) Results:
+---------------------------------
+R2 Score (Train): 0.1447
+R2 Score (Test):  0.0320
+MAE (Test):       0.3676

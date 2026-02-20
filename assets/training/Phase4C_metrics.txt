@@ -1,0 +1,15 @@
+Phase 4C (Weighted Loss 2x) Results:
+------------------------------------
+Accuracy (Train): 0.4689
+Accuracy (Test):  0.4673
+
+Classification Report (Test):
+              precision    recall  f1-score   support
+
+           0       0.63      0.01      0.01     85191
+           1       0.47      1.00      0.64     74368
+
+    accuracy                           0.47    159559
+   macro avg       0.55      0.50      0.32    159559
+weighted avg       0.56      0.47      0.30    159559
+

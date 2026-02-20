@@ -1,0 +1,5 @@
+Phase 3A (CLIP Zero) Results:
+----------------------------------
+R2 Score (Train): 0.0274
+R2 Score (Test):  0.0244
+MAE (Test):       0.3786

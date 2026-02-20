@@ -1,0 +1,5 @@
+Phase 3H (SigCLIP LoRA Long 9 Epochs) Results:
+---------------------------------------------
+R2 Score (Train): 0.0027
+R2 Score (Test):  0.0024
+MAE (Test):       0.3877

@@ -1,0 +1,5 @@
+Phase 1C (One-Hot) Results:
+---------------------------
+R2 Score (Train): 0.1210
+R2 Score (Test):  0.0282
+MAE (Test):       0.3691

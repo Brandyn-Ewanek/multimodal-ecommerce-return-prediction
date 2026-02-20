@@ -1,0 +1,5 @@
+Phase 1D (9 Epochs - Fashion Only) Results:
+-------------------------------------------
+R2 Score (Train): 0.0391
+R2 Score (Test):  -0.0088
+MAE (Test):       0.3865

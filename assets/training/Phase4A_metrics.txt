@@ -1,0 +1,15 @@
+Phase 4A (Visual Entailment - No Middle) Results:
+-------------------------------------------------
+Accuracy (Train): 0.5330
+Accuracy (Test):  0.5341
+
+Classification Report (Test):
+              precision    recall  f1-score   support
+
+           0       0.54      0.87      0.67     85191
+           1       0.50      0.15      0.23     74368
+
+    accuracy                           0.53    159559
+   macro avg       0.52      0.51      0.45    159559
+weighted avg       0.52      0.53      0.46    159559
+

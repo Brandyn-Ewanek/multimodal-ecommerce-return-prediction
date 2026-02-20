@@ -1,0 +1,5 @@
+Phase 3F (SigCLIP Regularized) Results:
+-------------------------------------
+R2 Score (Train): 0.2353
+R2 Score (Test):  -0.0062
+MAE (Test):       0.3642

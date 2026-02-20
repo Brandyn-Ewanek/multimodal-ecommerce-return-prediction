@@ -1,0 +1,5 @@
+Phase 1A Results:
+-----------------
+R2 Score (Train): 0.2243
+R2 Score (Test):  0.0534
+MAE (Test):       0.3528

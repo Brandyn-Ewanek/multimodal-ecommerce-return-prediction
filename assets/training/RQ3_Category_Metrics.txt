@@ -1,0 +1,11 @@
+Category                                 | Train Acc  | Test Acc   | Test Recall (Risk)
+------------------------------------------------------------------------------------------
+raw_review_Amazon_Fashion                | 0.502      | 0.503     | 0.946
+raw_review_Beauty_and_Personal_Care      | 0.591      | 0.588     | 0.139
+raw_review_Clothing_Shoes_and_Jewelry    | 0.492      | 0.492     | 0.954
+raw_review_Home_and_Kitchen              | 0.551      | 0.557     | 0.466
+raw_review_Electronics                   | 0.531      | 0.529     | 0.741
+raw_review_Cell_Phones_and_Accessories   | 0.548      | 0.551     | 0.217
+raw_review_Tools_and_Home_Improvement    | 0.540      | 0.535     | 0.724
+raw_review_Automotive                    | 0.476      | 0.481     | 0.974
+raw_review_Sports_and_Outdoors           | 0.522      | 0.522     | 0.370

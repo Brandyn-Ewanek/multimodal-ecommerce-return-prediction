@@ -1,0 +1,5 @@
+Phase 3G (SigCLIP LoRA) Results:
+-------------------------------------
+R2 Score (Train): 0.0070
+R2 Score (Test):  0.0061
+MAE (Test):       0.3864

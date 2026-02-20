@@ -1,0 +1,5 @@
+Phase 2D (Euclidean Distance) Results:
+--------------------------------------
+R2 Score (Train): 0.1310
+R2 Score (Test):  0.0275
+MAE (Test):       0.3680

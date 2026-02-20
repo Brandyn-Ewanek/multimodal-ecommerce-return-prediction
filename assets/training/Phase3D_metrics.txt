@@ -1,0 +1,5 @@
+Phase 3D (Gated Forensic CLIP) Results:
+-------------------------------------
+R2 Score (Train): 0.1457
+R2 Score (Test):  0.0256
+MAE (Test):       0.3679

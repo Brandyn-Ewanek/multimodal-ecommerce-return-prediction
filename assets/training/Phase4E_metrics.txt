@@ -1,0 +1,15 @@
+Phase 4E (Weighted Loss 1.15x) Results:
+---------------------------------------
+Accuracy (Train): 0.5290
+Accuracy (Test):  0.5259
+
+Classification Report (Test):
+              precision    recall  f1-score   support
+
+           0       0.57      0.44      0.50     85191
+           1       0.49      0.62      0.55     74368
+
+    accuracy                           0.53    159559
+   macro avg       0.53      0.53      0.52    159559
+weighted avg       0.54      0.53      0.52    159559
+

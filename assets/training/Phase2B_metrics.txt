@@ -1,0 +1,5 @@
+Phase 2B (Cosine Similarity) Results:
+-------------------------------------
+R2 Score (Train): 0.1267
+R2 Score (Test):  0.0272
+MAE (Test):       0.3674

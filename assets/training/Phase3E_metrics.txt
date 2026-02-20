@@ -1,0 +1,5 @@
+Phase 3E (SigCLIP Fine-Tuned) Results:
+-------------------------------------
+R2 Score (Train): 0.2414
+R2 Score (Test):  -0.0035
+MAE (Test):       0.3639
