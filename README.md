@@ -31,6 +31,7 @@ Instead of relying solely on top-line accuracy, this project includes a robust f
 
 **SHAP Explainability & Visual Dilution:**
 ![SHAP Analysis Slide](doc/RQ3-2.jpg)
+
 To understand why the model struggled to utilize the images effectively across these categories, a forensic evaluation was conducted using SHAP (SHapley Additive exPlanations). The analysis revealed that the visual compression required for training caused severe attention misalignment. In standard e-commerce images, "white space" occupies approximately 60-70% of the visual field. Because the Vision Transformer (ViT-B/32) aggregates information globally from all image patches, this vast expanse of empty background diluted the subtle forensic signals of the product. Consequently, the model learned that a professional white background is a statistical predictor of a "Safe" listing, overpowering any actual visual discrepancy present in the product itself.
 
 **Finding:** Yes, the model's behavior shifts drastically by category, revealing a "Fashion Paradox." In High-Subjectivity categories like Fashion and Clothing, the model exhibited a "Flag Everything" behavior with a test recall of 0.946 and 0.954, respectively. Conversely, in categories like Beauty and Cell Phones, it exhibited a "Flag Nothing" behavior with test recalls dropping to 0.139 and 0.217.
