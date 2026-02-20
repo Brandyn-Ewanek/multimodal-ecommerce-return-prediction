@@ -1,0 +1,36 @@
+# Multimodal E-commerce Return Prediction: Content Guard
+
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Status](https://img.shields.io/badge/status-completed-success.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+**Author:** Brandyn Ewanek  
+**Institution:** IU International University of Applied Sciences (Bachelor's Thesis)
+
+## 📌 Overview
+E-commerce return rates represent a massive financial and environmental burden. This repository contains the code and research for **Content Guard**, a multimodal deep learning architecture designed to predict product return rates by analyzing the discrepancy between visual data (product images) and semantic data (text descriptions).
+
+Instead of relying solely on top-line accuracy, this project includes a robust forensic analysis of the model's failure modes under different conditions, providing deeper insights into multimodal architecture vulnerabilities like mode collapse.
+
+**📄 [Read the Full Thesis](<doc/Thesis Predicing Ecommerce Returns - Brandyn Ewanek.pdf>)**
+
+## 🔬 Research Questions & Findings
+
+### RQ1: To what extent can visual-semantic discrepancy between product images and descriptions predict return risk in e-commerce?
+![RQ1 Slide](doc/RQ1.jpg)
+
+**Finding:** The experimental results proved that current standard Bi-Encoders exhibit "Structural Blindness." By compressing a complex product image into a single global vector (512 dimensions), the architecture destroys the subtle forensic visual cues—such as texture, drape, or material finish—required to contradict textual claims. Even perfectly balanced, the Phase 4E model could not exceed ~53% accuracy, effectively functioning as a random guesser.
+
+### RQ2: Does the explicit integration of the Cosine Similarity discrepancy score into the Multilayer Perceptron (MLP) fusion layer improve predictive performance compared to a multimodal baseline lacking this explicit feature?
+![RQ2 Slide](doc/RQ2.jpg)
+
+**Finding:** No, explicit geometric injection yields no statistically significant performance gain. In Phase 2B, calculating the distance between unaligned ResNet and DistilBERT vectors yielded random noise, which the model learned to ignore entirely. 
+
+### RQ3: Is there a measurable difference in the predictive effectiveness of the discrepancy model when applied across categories exhibiting high visual subjectivity (e.g., Fashion, Jewelry) versus those characterized by high functional consistency (e.g., Sports, Technology)?
+![RQ3 Slide](doc/RQ3-1.jpg)
+
+**SHAP Explainability & Visual Dilution:**
+![SHAP Analysis Slide](doc/RQ3-2.jpg)
+To understand why the model struggled to utilize the images effectively across these categories, a forensic evaluation was conducted using SHAP (SHapley Additive exPlanations). The analysis revealed that the visual compression required for training caused severe attention misalignment. In standard e-commerce images, "white space" occupies approximately 60-70% of the visual field. Because the Vision Transformer (ViT-B/32) aggregates information globally from all image patches, this vast expanse of empty background diluted the subtle forensic signals of the product. Consequently, the model learned that a professional white background is a statistical predictor of a "Safe" listing, overpowering any actual visual discrepancy present in the product itself.
+
+**Finding:** Yes, the model's behavior shifts drastically by category, revealing a "Fashion Paradox." In High-Subjectivity categories like Fashion and Clothing, the model exhibited a "Flag Everything" behavior with a test recall of 0.946 and 0.954, respectively. Conversely, in categories like Beauty and Cell Phones, it exhibited a "Flag Nothing" behavior with test recalls dropping to 0.139 and 0.217.
