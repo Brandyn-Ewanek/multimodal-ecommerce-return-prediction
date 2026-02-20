@@ -19,7 +19,7 @@ Instead of relying solely on top-line accuracy, this project includes a robust f
 
 To train the multimodal architecture, a robust target variable was required. The dataset underwent a two-step pipeline to establish ground truth:
 1. **Keyword Filtering:** The raw e-commerce semantic data was filtered to isolate positive customer sentiment (e.g., "perfect", "great quality") against return-signifying complaints (e.g., "damaged", "wrong item", "poor fit").
-2. **LLM Target Prediction:** Google's Gemini AI was deployed to analyze these filtered signals and synthesize a definitive **Return Likelihood Score** (High, Medium, Low). This LLM-generated score served as the target variable for the late fusion and entailment models.
+2. **LLM Target Prediction:** Google's Gemini AI was deployed to analyze these filtered signals and synthesize a definitive **Return Likelihood Probability** 0.0 - 1.0. This LLM-generated score served as the target variable for the late fusion and then was convert into a binary target for Phase4 experiments in the entailment models.
 
 
 ## 🔬 Research Questions & Findings
