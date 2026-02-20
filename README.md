@@ -14,6 +14,14 @@ Instead of relying solely on top-line accuracy, this project includes a robust f
 
 **📄 [Read the Full Thesis](<doc/Thesis Predicing Ecommerce Returns - Brandyn Ewanek.pdf>)**
 
+## 🎯 Target Generation Pipeline
+![Target Generation Pipeline](assets/data-prep/Target-Generation-Pipeline.jpg)
+
+To train the multimodal architecture, a robust target variable was required. The dataset underwent a two-step pipeline to establish ground truth:
+1. **Keyword Filtering:** The raw e-commerce semantic data was filtered to isolate positive customer sentiment (e.g., "perfect", "great quality") against return-signifying complaints (e.g., "damaged", "wrong item", "poor fit").
+2. **LLM Target Prediction:** Google's Gemini AI was deployed to analyze these filtered signals and synthesize a definitive **Return Likelihood Score** (High, Medium, Low). This LLM-generated score served as the target variable for the late fusion and entailment models.
+
+
 ## 🔬 Research Questions & Findings
 
 ### RQ1: To what extent can visual-semantic discrepancy between product images and descriptions predict return risk in e-commerce?
